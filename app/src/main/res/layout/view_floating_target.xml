@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@android:color/transparent">
+
+    <!-- Information Card above crosshair -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#DD000000"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        android:paddingTop="6dp"
+        android:paddingBottom="6dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:elevation="6dp">
+
+        <TextView
+            android:id="@+id/tvCoordinates"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="X: 0, Y: 0"
+            android:textColor="#FFFFFF"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btnApplyCoords"
+            android:layout_width="wrap_content"
+            android:layout_height="32dp"
+            android:layout_marginStart="8dp"
+            android:text="帶入"
+            android:textSize="11sp"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            android:minHeight="0dp"
+            android:minWidth="0dp"
+            android:backgroundTint="#00C853"
+            android:textColor="#FFFFFF" />
+
+        <ImageButton
+            android:id="@+id/btnCloseOverlay"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_marginStart="4dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:src="@android:drawable/ic_menu_close_clear_cancel"
+            android:contentDescription="Close"
+            android:tint="#FFFFFF" />
+    </LinearLayout>
+
+    <!-- Draggable Crosshair Target -->
+    <ImageView
+        android:id="@+id/ivCrosshair"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:src="@drawable/ic_crosshair"
+        android:contentDescription="Target Crosshair"
+        android:clickable="true"
+        android:focusable="true" />
+
+</LinearLayout>

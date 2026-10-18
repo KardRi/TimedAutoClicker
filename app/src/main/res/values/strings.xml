@@ -1,0 +1,49 @@
+<resources>
+    <string name="app_name">定時自動點擊器</string>
+    <string name="accessibility_service_name">定時自動點擊輔助服務</string>
+    <string name="accessibility_service_description">此服務僅用於在您預設的時間自動點擊螢幕指定座標。本應用完全離線運行，不會收集或上傳任何個人隱私與螢幕資料。</string>
+
+    <!-- UI Strings -->
+    <string name="status_title">系統權限與狀態</string>
+    <string name="perm_accessibility">無障礙服務 (點擊核心)</string>
+    <string name="perm_overlay">懸浮窗權限 (靶心定位)</string>
+    <string name="perm_exact_alarm">精確鬧鐘權限 (準時觸發)</string>
+    <string name="perm_granted">已開啟</string>
+    <string name="perm_missing">未開啟 (點擊授權)</string>
+
+    <string name="coord_title">點擊座標設定</string>
+    <string name="coord_x_hint">X 座標 (像素)</string>
+    <string name="coord_y_hint">Y 座標 (像素)</string>
+    <string name="btn_pick_coord">開啟懸浮靶心定位</string>
+    <string name="btn_test_click">立即測試點擊 (驗證座標)</string>
+
+    <string name="time_title">執行時間設定</string>
+    <string name="tab_datetime">標準時間 (年月日時分秒)</string>
+    <string name="tab_epoch">Epoch 時間戳 (秒/毫秒)</string>
+    <string name="tab_countdown">相對倒數 (幾秒後)</string>
+
+    <string name="btn_select_date">選擇日期</string>
+    <string name="btn_select_time">選擇時間</string>
+    <string name="epoch_hint">請輸入 Epoch 毫秒 (例: 1773900000000) 或秒</string>
+    <string name="countdown_hint">秒數 (例如: 10)</string>
+
+    <string name="time_preview_title">目標執行時間預覽：</string>
+    <string name="current_time_title">裝置當前時間：</string>
+    <string name="remaining_time_title">距離觸發剩餘：</string>
+
+    <string name="advance_title">進階點擊選項</string>
+    <string name="click_count_hint">點擊次數 (預設: 1)</string>
+    <string name="click_interval_hint">連點間隔 (ms, 預設: 100)</string>
+    <string name="click_duration_hint">按下持續時間 (ms, 預設: 50)</string>
+
+    <string name="btn_start_task">啟動定時點擊任務</string>
+    <string name="btn_cancel_task">取消當前任務</string>
+    <string name="log_title">即時日誌紀錄</string>
+
+    <!-- Notification Strings -->
+    <string name="channel_name">定時點擊服務</string>
+    <string name="channel_desc">用於在背景維持精準時間觸發與點擊操作</string>
+    <string name="notif_waiting_title">定時點擊待命中…</string>
+    <string name="notif_waiting_content">目標時間：%1$s | 座標：(%2$d, %3$d)</string>
+    <string name="notif_success_title">點擊已執行</string>
+</resources>

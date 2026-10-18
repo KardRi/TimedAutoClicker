@@ -1,0 +1,21 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="48dp"
+    android:height="48dp"
+    android:viewportWidth="48"
+    android:viewportHeight="48">
+    <!-- Outer circle -->
+    <path
+        android:strokeColor="#FF0055"
+        android:strokeWidth="2.5"
+        android:fillColor="#15FF0055"
+        android:pathData="M24,4 A20,20 0 1,1 23.99,4 Z" />
+    <!-- Cross lines -->
+    <path
+        android:strokeColor="#FF0055"
+        android:strokeWidth="2"
+        android:pathData="M24,0 L24,14 M24,34 L24,48 M0,24 L14,24 M34,24 L48,24" />
+    <!-- Center dot -->
+    <path
+        android:fillColor="#FF0055"
+        android:pathData="M24,21 A3,3 0 1,1 23.99,21 Z" />
+</vector>
